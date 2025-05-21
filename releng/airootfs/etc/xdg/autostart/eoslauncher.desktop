@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Exec=python3 /usr/local/bin/launcher.py
+Name=EosOS Installer Launcher
+Comment=Lanza la interfaz para instalar EosOS
+X-GNOME-Autostart-enabled=true

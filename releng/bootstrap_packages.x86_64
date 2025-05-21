@@ -1,0 +1,17 @@
+arch-install-scripts
+base
+sudo
+cowsay
+curl
+openbsd-netcat
+openssh
+pacman-contrib
+reflector
+tree
+zsh
+
+# Text editors
+micro
+nano
+vim
+
