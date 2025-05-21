@@ -11,7 +11,7 @@ if [[ ! -d "$DIR" ]]; then
 	exit 1
 fi
 
-RELEASE=`find $DIR -type f -name "eos-*.iso" -printf "%f\n"`
+RELEASE=`find $DIR -type f -name "EosOS_gnome-*.iso" -printf "%f\n"`
 
 if [[ -n "$RELEASE" ]]; then
 	echo -e "\n[*] Generating sha256sum for ${RELEASE} ..."
