@@ -1,18 +1,20 @@
 #!/bin/bash
 
+set -e -u
+
+# Regenerar locales
 locale-gen
 
+# Habilitar servicios importantes
 systemctl enable NetworkManager
-
-pacman-key --init
-
+systemctl enable firewalld.service
 systemctl enable gdm.service
 
-systemctl enable firewalld.service
+# Forzar el objetivo gráfico
+systemctl set-default graphical.target
 
-## Script to perform several important tasks before `mkarcheosiso` create filesystem image.
-
-set -e -u
+# Iniciar claves del sistema
+pacman-key --init
 
 ## -------------------------------------------------------------- ##
 
