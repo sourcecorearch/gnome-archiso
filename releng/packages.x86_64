@@ -147,6 +147,7 @@ xf86-video-nouveau
 # ------- Packages
 firewalld
 xorg
+xorg-server
 xorg-xinput
 xf86-input-libinput
 gnome-shell
@@ -156,6 +157,7 @@ gnome-terminal
 gnome-text-editor
 gnome-shell-extensions
 gnome-tweaks
+gnome-session
 xdg-user-dirs-gtk
 xdg-user-dirs
 gvfs
